@@ -5,21 +5,21 @@
 class FuegoCli < Formula
   desc "A file-system based Go framework for APIs and websites"
   homepage "https://github.com/abdul-hamid-achik/fuego"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.4/fuego_0.3.4_darwin_amd64.tar.gz"
-      sha256 "0449e477bfb1960920aa965457e15e1d4b42e8b7c72c0599e670db971446343e"
+      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.5/fuego_0.3.5_darwin_amd64.tar.gz"
+      sha256 "ed0320e28ad0d1bc4d44f32ce2128d538ccaf77d294751e94f512844165734df"
 
       def install
         bin.install "fuego"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.4/fuego_0.3.4_darwin_arm64.tar.gz"
-      sha256 "57af6d14e6e5cf445fe45b2ac7291bb317ecf8d51a243319d7169864aea27a2c"
+      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.5/fuego_0.3.5_darwin_arm64.tar.gz"
+      sha256 "2545e46ac46ef7709ff41376445136eb4fdea3407f5dd4bcd09d303c296d13dd"
 
       def install
         bin.install "fuego"
@@ -29,15 +29,15 @@ class FuegoCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.4/fuego_0.3.4_linux_amd64.tar.gz"
-      sha256 "d949cea4a55f789760c7f588d30f55944ffe1b632f405111879b2d569e76a0f8"
+      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.5/fuego_0.3.5_linux_amd64.tar.gz"
+      sha256 "47ce829cef35c1c5659055c039c4f6ff301777deae43e35288550a7fa484ce75"
       def install
         bin.install "fuego"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.4/fuego_0.3.4_linux_arm64.tar.gz"
-      sha256 "cf9a47d60b36932678e9b425ef013bf1761d36449450875e0bbc92111527ea6a"
+      url "https://github.com/abdul-hamid-achik/fuego/releases/download/v0.3.5/fuego_0.3.5_linux_arm64.tar.gz"
+      sha256 "9c16fcdc17b504283b741d434df991eb57e74d3128bc30e17364a69e8c5362bc"
       def install
         bin.install "fuego"
       end
